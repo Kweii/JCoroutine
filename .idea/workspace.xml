@@ -1,0 +1,963 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4a98ce05-81c7-45ad-b1d1-891363c91b72" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_47.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_26_0_jre.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_2_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_all_6_0_ALPHA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JCoroutine.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jcoroutine/common/constant/JCRConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jcoroutine/common/constant/JCRConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jcoroutine/test/Quasar.java" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/base/target/" />
+    <ignored path="$PROJECT_DIR$/core/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="AnalyzeClassLoader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jcoroutine/core/analysis/AnalyzeClassLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="111">
+              <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JCRAnalyzer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jcoroutine/core/analysis/JCRAnalyzer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JCRTools.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jcoroutine/common/tool/JCRTools.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="334">
+              <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JCRConstant.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jcoroutine/common/constant/JCRConstant.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JCoroutine.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jcoroutine/core/JCoroutine.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JCRContext.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jcoroutine/core/JCRContext.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="782">
+              <caret line="47" column="27" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JCRTransformer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jcoroutine/core/instrument/JCRTransformer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="920">
+              <caret line="52" column="44" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/jcoroutine/test/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClassLoaderTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/jcoroutine/test/ClassLoaderTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" column="27" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>defineClass</find>
+      <find>findClass</find>
+      <find>URLClassLoader</find>
+      <find>AppClassLoader</find>
+      <find>getClassPath</find>
+      <find>pathToURLs</find>
+      <find>PrimaryClassLoader</find>
+      <find>isNot</find>
+      <find>isNotSystemClass</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/base/src/main/java/com/jcoroutine/base/exception/JCoroutineException.java" />
+        <option value="$PROJECT_DIR$/core/pom.xml" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/jcoroutine/core/loader/JCoroutineClassLoader2.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/jcoroutine/core/asm/User.java" />
+        <option value="$PROJECT_DIR$/core/src/test/java/ClassLoaderTest.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/jcoroutine/core/loader/JCoroutineClassLoader.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/jcoroutine/core/transformer/JCoroutineTransformer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/exception/JCoroutineException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jcoroutine/base/exception/JCoroutineException.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ClassLoaderTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jcoroutine/test/Gender.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jcoroutine/test/ClassLoaderTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jcoroutine/test/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jcoroutine/core/JCoroutine.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jcoroutine/Constant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jcoroutine/core/loader/JCoroutineClassLoader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jcoroutine/core/transformer/PrimaryClassLoader.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jcoroutine/core/transformer/PreClassLoader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jcoroutine/core/JCoroutineScanner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jcoroutine/core/transformer/JCoroutineTransformer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jcoroutine/base/constant/Constant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jcoroutine/core/loader/JCRClassLoader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jcoroutine/core/JCRScanner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jcoroutine/core/analysis/InvocationNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jcoroutine/base/utils/MethodUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jcoroutine/core/analysis/MethodInvocationAnalyzer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jcoroutine/core/analysis/MethodNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jcoroutine/core/analysis/MethodInvocation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jcoroutine/base/constant/JCRConstant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jcoroutine/base/utils/JCRTools.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jcoroutine/common/utils/JCRTools.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jcoroutine/core/analysis/Invocation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jcoroutine/core/analysis/InvocationAnalyzer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jcoroutine/core/analysis/JCRScanner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jcoroutine/core/JCRContext.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jcoroutine/core/analysis/JCRAnalyzer.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jcoroutine/test/quansar.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jcoroutine/test/Quasar.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jcoroutine/core/analysis/AnalyzeClassLoader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jcoroutine/core/instrument/JCRTransformer.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jcoroutine/common/constant/JCRConstant.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1726" />
+    <option name="y" value="94" />
+    <option name="width" value="768" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="JCoroutine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JCoroutine" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JCoroutine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JCoroutine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JCoroutine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JCoroutine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JCoroutine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JCoroutine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JCoroutine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JCoroutine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/jcoroutine/base" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="exception" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\JCoroutine" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.ClassLoaderTest">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+    </configuration>
+    <configuration name="ClassLoaderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jcoroutine.test.ClassLoaderTest" />
+      <module name="JCoroutine" />
+      <option name="VM_PARAMETERS" value="-javaagent:D:\workspace\JCoroutine\target\JCoroutine-1.0-SNAPSHOT.jar" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="Quasar.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JCoroutine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jcoroutine.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.jcoroutine.test" />
+      <option name="MAIN_CLASS_NAME" value="com.jcoroutine.test.Quasar" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="core" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <list>
+      <item itemvalue="Application.ClassLoaderTest" />
+      <item itemvalue="JUnit.Quasar.test2" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ClassLoaderTest" />
+        <item itemvalue="JUnit.Quasar.test2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4a98ce05-81c7-45ad-b1d1-891363c91b72" name="Default" comment="" />
+      <created>1536560944224</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1536560944224</updated>
+      <workItem from="1536560946130" duration="9939000" />
+      <workItem from="1536577369628" duration="8867000" />
+      <workItem from="1536973518568" duration="20722000" />
+      <workItem from="1537002859124" duration="3890000" />
+      <workItem from="1537007455797" duration="4598000" />
+      <workItem from="1537067267187" duration="6110000" />
+      <workItem from="1537078502634" duration="9168000" />
+      <workItem from="1537184035398" duration="7673000" />
+      <workItem from="1537365148250" duration="4776000" />
+      <workItem from="1537484864012" duration="754000" />
+      <workItem from="1537604140598" duration="179000" />
+      <workItem from="1537662738701" duration="2348000" />
+      <workItem from="1537669564463" duration="1508000" />
+      <workItem from="1538831828815" duration="1830000" />
+      <workItem from="1541828912227" duration="1438000" />
+      <workItem from="1541830569633" duration="318000" />
+    </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1541829120030</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1541829120030</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="ClassLoaderTest_test - 2018.09.10 at 19h 03m 28s.xml">
+      <configuration name="ClassLoaderTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClassLoaderTest_test - 2018.09.10 at 19h 03m 35s.xml">
+      <configuration name="ClassLoaderTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClassLoaderTest_test - 2018.09.10 at 19h 03m 40s.xml">
+      <configuration name="ClassLoaderTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClassLoaderTest_test - 2018.09.10 at 19h 03m 54s.xml">
+      <configuration name="ClassLoaderTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClassLoaderTest_test - 2018.09.10 at 19h 04m 09s.xml">
+      <configuration name="ClassLoaderTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Quasar_test2 - 2018.09.17 at 23h 23m 14s.xml">
+      <configuration name="Quasar.test2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Quasar_test2 - 2018.09.17 at 23h 25m 05s.xml">
+      <configuration name="Quasar.test2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Quasar_test2 - 2018.09.17 at 23h 25m 18s.xml">
+      <configuration name="Quasar.test2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Quasar_test2 - 2018.09.17 at 23h 25m 35s.xml">
+      <configuration name="Quasar.test2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Quasar_test2 - 2018.09.17 at 23h 25m 59s.xml">
+      <configuration name="Quasar.test2" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="84118000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.2669633" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.32889125" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.6158129" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21245828" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32962137" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49492386" visible="true" weight="0.13432837" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="ASM" order="3" weight="0.32995737" />
+      <window_info id="Structure" order="1" sideWeight="0.50507617" side_tool="true" weight="0.22768533" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.36191538" />
+      <window_info anchor="bottom" id="Tail" order="8" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32925472" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="105" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/ow2/asm/asm-all/6.0_ALPHA/asm-all-6.0_ALPHA-sources.jar!/org/objectweb/asm/tree/MethodNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="92" column="31" lean-forward="true" selection-start-line="92" selection-start-column="11" selection-end-line="92" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jcoroutine/core/analysis/InvocationAnalyzer.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/ow2/asm/asm-all/6.0_ALPHA/asm-all-6.0_ALPHA-sources.jar!/org/objectweb/asm/tree/AbstractInsnNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="43" column="22" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/ow2/asm/asm-all/6.0_ALPHA/asm-all-6.0_ALPHA-sources.jar!/org/objectweb/asm/tree/MethodInsnNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="53" column="22" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jcoroutine/core/loader/JCRClassLoader.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/co/paralleluniverse/quasar-core/0.7.10/quasar-core-0.7.10.jar!/co/paralleluniverse/strands/Strand.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="331" column="23" selection-start-line="331" selection-start-column="23" selection-end-line="331" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/Java1.8/jdk/jre/lib/rt.jar!/sun/misc/Unsafe.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="353" column="53" lean-forward="true" selection-start-line="353" selection-start-column="4" selection-end-line="353" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/Java1.8/jdk/src.zip!/java/util/concurrent/locks/LockSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="124" column="50" selection-start-line="124" selection-start-column="47" selection-end-line="124" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/co/paralleluniverse/quasar-core/0.7.10/quasar-core-0.7.10-sources.jar!/co/paralleluniverse/fibers/FiberForkJoinScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5405">
+          <caret line="292" column="30" selection-start-line="292" selection-start-column="30" selection-end-line="292" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/co/paralleluniverse/quasar-core/0.7.10/quasar-core-0.7.10-sources.jar!/co/paralleluniverse/concurrent/forkjoin/ParkableForkJoinTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3887">
+          <caret line="208" column="41" selection-start-line="208" selection-start-column="34" selection-end-line="208" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/co/paralleluniverse/quasar-core/0.7.10/quasar-core-0.7.10-sources.jar!/co/paralleluniverse/fibers/RunnableFiberTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3473">
+          <caret line="189" column="65" selection-start-line="189" selection-start-column="65" selection-end-line="189" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/co/paralleluniverse/quasar-core/0.7.10/quasar-core-0.7.10-sources.jar!/co/paralleluniverse/fibers/SuspendExecution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/co/paralleluniverse/quasar-core/0.7.10/quasar-core-0.7.10-sources.jar!/co/paralleluniverse/fibers/FiberTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/co/paralleluniverse/quasar-core/0.7.10/quasar-core-0.7.10-sources.jar!/co/paralleluniverse/fibers/Fiber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29923">
+          <caret line="1650" column="14" selection-start-line="1650" selection-start-column="14" selection-end-line="1650" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/co/paralleluniverse/quasar-core/0.7.10/quasar-core-0.7.10.jar!/co/paralleluniverse/fibers/FiberAsync.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/co/paralleluniverse/quasar-core/0.7.10/quasar-core-0.7.10-sources.jar!/co/paralleluniverse/strands/Strand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10810">
+          <caret line="500" column="20" selection-start-line="500" selection-start-column="20" selection-end-line="500" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/Java1.8/jdk/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45126">
+          <caret line="2045" column="24" selection-start-line="2045" selection-start-column="24" selection-end-line="2045" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/co/paralleluniverse/quasar-core/0.7.10/quasar-core-0.7.10-sources.jar!/co/paralleluniverse/fibers/FiberAsync.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="28" column="2" lean-forward="true" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/co/paralleluniverse/quasar-core/0.7.10/quasar-core-0.7.10.jar!/jsr166e/ForkJoinPool.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/co/paralleluniverse/quasar-core/0.7.10/quasar-core-0.7.10-sources.jar!/co/paralleluniverse/fibers/instrument/DefaultSuspendableClassifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/Java1.8/jdk/src.zip!/java/util/Stack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1385">
+          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/co/paralleluniverse/quasar-core/0.7.10/quasar-core-0.7.10-sources.jar!/co/paralleluniverse/fibers/Stack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="127" column="14" selection-start-line="127" selection-start-column="8" selection-end-line="127" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/co/paralleluniverse/quasar-core/0.7.10/quasar-core-0.7.10-sources.jar!/co/paralleluniverse/fibers/instrument/Classes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="60" column="27" lean-forward="true" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/co/paralleluniverse/quasar-core/0.7.10/quasar-core-0.7.10-sources.jar!/co/paralleluniverse/fibers/instrument/InstrumentMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3427">
+          <caret line="232" column="57" selection-start-line="232" selection-start-column="42" selection-end-line="232" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/co/paralleluniverse/quasar-core/0.7.10/quasar-core-0.7.10.jar!/co/paralleluniverse/fibers/instrument/LabelSuspendableCallSitesClassVisitor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="34" column="42" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/co/paralleluniverse/quasar-core/0.7.10/quasar-core-0.7.10-sources.jar!/co/paralleluniverse/fibers/instrument/LabelSuspendableCallSitesClassVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1196">
+          <caret line="68" column="41" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/co/paralleluniverse/quasar-core/0.7.10/quasar-core-0.7.10.jar!/co/paralleluniverse/fibers/instrument/InstrumentClass.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/co/paralleluniverse/quasar-core/0.7.10/quasar-core-0.7.10-sources.jar!/co/paralleluniverse/fibers/instrument/InstrumentClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4232">
+          <caret line="239" column="21" selection-start-line="239" selection-start-column="21" selection-end-line="239" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/co/paralleluniverse/quasar-core/0.7.10/quasar-core-0.7.10-sources.jar!/co/paralleluniverse/fibers/instrument/SuspOffsetsAfterInstrClassVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/co/paralleluniverse/quasar-core/0.7.10/quasar-core-0.7.10-sources.jar!/co/paralleluniverse/fibers/instrument/QuasarURLClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/co/paralleluniverse/quasar-core/0.7.10/quasar-core-0.7.10.jar!/co/paralleluniverse/asm/tree/analysis/Frame.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/co/paralleluniverse/quasar-core/0.7.10/quasar-core-0.7.10.jar!/co/paralleluniverse/asm/tree/analysis/BasicVerifier.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/co/paralleluniverse/quasar-core/0.7.10/quasar-core-0.7.10.jar!/co/paralleluniverse/asm/tree/analysis/Analyzer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3036">
+          <caret line="38" column="38" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/ow2/asm/asm-all/6.0_ALPHA/asm-all-6.0_ALPHA-sources.jar!/org/objectweb/asm/MethodVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="55" column="22" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/co/paralleluniverse/quasar-core/0.7.10/quasar-core-0.7.10.jar!/co/paralleluniverse/asm/tree/JumpInsnNode.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/co/paralleluniverse/quasar-core/0.7.10/quasar-core-0.7.10-sources.jar!/co/paralleluniverse/fibers/instrument/MethodDatabase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="72" column="25" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/co/paralleluniverse/quasar-core/0.7.10/quasar-core-0.7.10-sources.jar!/co/paralleluniverse/fibers/instrument/QuasarInstrumentor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="44" column="42" selection-start-line="44" selection-start-column="42" selection-end-line="44" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jcoroutine/test/Gender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jcoroutine/test/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/ow2/asm/asm-all/6.0_ALPHA/asm-all-6.0_ALPHA-sources.jar!/org/objectweb/asm/tree/ClassNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="189" column="28" selection-start-line="189" selection-start-column="11" selection-end-line="189" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jcoroutine/core/instrument/JCRTransformer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="920">
+          <caret line="52" column="44" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../quasar/quasar-actors/src/main/java/co/paralleluniverse/actors/ActorModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="182" column="46" selection-start-line="182" selection-start-column="46" selection-end-line="182" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jcoroutine/core/JCoroutine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jcoroutine/core/JCRContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="47" column="27" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jcoroutine/test/ClassLoaderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jcoroutine/test/Quasar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jcoroutine/core/analysis/AnalyzeClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jcoroutine/core/analysis/JCRAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jcoroutine/common/tool/JCRTools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jcoroutine/common/constant/JCRConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>groovy-2.4.15</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>JCoroutine</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.google.code.findbugs:jsr305:3.0.2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
