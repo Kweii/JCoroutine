@@ -56,9 +56,9 @@
                 <configuration>
                     <archive>
                         <manifestEntries>
-                            <Premain-Class>com.jcoroutine.core.instrument.JCRTransformer</Premain-Class>
+                            <Premain-Class>com.jcoroutine.core.instrument.JCoroutineTransformer</Premain-Class>
                             <!--<Boot-Class-Path>E:/maven-lib/javassist/javassist/3.8.0.GA/javassist-3.8.0.GA.jar</Boot-Class-Path>-->
-                            <Agent-Class>com.jcoroutine.core.instrument.JCRTransformer</Agent-Class>
+                            <Agent-Class>com.jcoroutine.core.instrument.JCoroutineTransformer</Agent-Class>
                             <!--<Can-Redefine-Classes>true</Can-Redefine-Classes>-->
                         </manifestEntries>
                     </archive>

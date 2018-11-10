@@ -1,7 +1,7 @@
 package com.jcoroutine.core.instrument;
 
-import com.jcoroutine.common.tool.JCRTools;
-import com.jcoroutine.core.analysis.JCRAnalyzer;
+import com.jcoroutine.common.tool.JCoroutineTools;
+import com.jcoroutine.core.callSite.CallSiteAnalyzer;
 import org.apache.log4j.Logger;
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassWriter;
@@ -19,19 +19,19 @@ import java.security.ProtectionDomain;
  * @description:
  * @date:2018-09-10
  */
-public final class JCRTransformer implements ClassFileTransformer {
-    private static Logger logger = Logger.getLogger(JCRTransformer.class);
+public final class JCoroutineTransformer implements ClassFileTransformer {
+    private static Logger logger = Logger.getLogger(JCoroutineTransformer.class);
 
     static {
-        JCRAnalyzer.analyze();
+        CallSiteAnalyzer.preAnalyze();
     }
 
     public static void premain(String options, Instrumentation ins) throws UnmodifiableClassException {
-        ins.addTransformer(new JCRTransformer());
+        ins.addTransformer(new JCoroutineTransformer());
     }
 
     public byte[] transform(ClassLoader loader, String className, Class<?> classBeingRedefined, ProtectionDomain protectionDomain, byte[] classfileBuffer) throws IllegalClassFormatException {
-        if (JCRTools.isNotSystemClass(className)){
+        if (JCoroutineTools.refersJCoroutinePackage(className)){
             return doTransform(classfileBuffer);
         }
         return null;
@@ -55,7 +55,17 @@ public final class JCRTransformer implements ClassFileTransformer {
             il.add(new MethodInsnNode(Opcodes.INVOKEVIRTUAL,
                     "java/io/PrintStream", "println", "(Ljava/lang/String;)V"));
             insns.insert(il);
-            md.maxStack += 3;
+
+            InsnList end = new InsnList();
+            end.add(new FieldInsnNode(Opcodes.GETSTATIC, "java/lang/System",
+                    "out", "Ljava/io/PrintStream;"));
+            end.add(new LdcInsnNode("Leave method->" + cn.name+"."+md.name));
+            end.add(new MethodInsnNode(Opcodes.INVOKEVIRTUAL,
+                    "java/io/PrintStream", "println", "(Ljava/lang/String;)V"));
+
+            insns.insert(insns.getLast(), end);
+
+            md.maxStack += 6;
 
         }
         ClassWriter cw = new ClassWriter(0);

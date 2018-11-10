@@ -1,6 +1,6 @@
-package com.jcoroutine.core.analysis;
+package com.jcoroutine.core.callSite;
 
-import com.jcoroutine.common.tool.JCRTools;
+import com.jcoroutine.common.tool.JCoroutineTools;
 import sun.misc.Launcher;
 import sun.misc.Resource;
 import sun.misc.URLClassPath;
@@ -19,16 +19,16 @@ import java.util.jar.Manifest;
  * @description:
  * @date:2018-09-17
  */
-public class AnalyzeClassLoader extends URLClassLoader {
-    private static AnalyzeClassLoader singleton = null;
+class CallSiteClassLoader extends URLClassLoader {
+    private static CallSiteClassLoader singleton = null;
 
-    private AnalyzeClassLoader(URL[] urls, ClassLoader parent) {
+    private CallSiteClassLoader(URL[] urls, ClassLoader parent) {
         super(urls, parent);
     }
 
     static ClassLoader singleton() throws Exception {
         if (singleton == null) {
-            synchronized (AnalyzeClassLoader.class) {
+            synchronized (CallSiteClassLoader.class) {
                 if (singleton == null) {
                     String classPath;
                     URL[] urls;
@@ -44,8 +44,8 @@ public class AnalyzeClassLoader extends URLClassLoader {
                         File[] files = (File[]) getClassPath.invoke(null, classPath);
                         urls = (URL[]) pathToUrls.invoke(null, new Object[]{files});
                     }
-
-                    singleton = new AnalyzeClassLoader(urls, ClassLoader.getSystemClassLoader().getParent());
+                    //设置扩展类加载器为父类加载器，不能使用当前上下文类加载器，否则无法分析
+                    singleton = new CallSiteClassLoader(urls, ClassLoader.getSystemClassLoader().getParent());
                 }
             }
         }
@@ -89,8 +89,8 @@ public class AnalyzeClassLoader extends URLClassLoader {
             method.invoke(this, pkgname, man, url);
         }
         byte[] bytes = res.getBytes();
-        if (JCRTools.isNotSystemClass(name)) {
-            JCRAnalyzer.doAnalyze(bytes);
+        if (JCoroutineTools.refersJCoroutinePackage(name)) {
+            CallSiteAnalyzer.analyzeClassMethods(bytes);
         }
 
         CodeSigner[] signers = res.getCodeSigners();
