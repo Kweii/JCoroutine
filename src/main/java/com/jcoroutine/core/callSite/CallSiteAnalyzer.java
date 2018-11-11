@@ -14,9 +14,11 @@ import org.objectweb.asm.tree.*;
 import java.util.*;
 
 /**
- * @author: guiliehua
- * @description:
- * @date:2018-09-15
+ * Created with IntelliJ IDEA.
+ * User: guiliehua
+ * Date: 2018/11/11
+ * Time: 下午3:37
+ * Desc:
  */
 public class CallSiteAnalyzer implements Opcodes {
     private static Logger logger = Logger.getLogger(CallSiteAnalyzer.class);
@@ -44,23 +46,39 @@ public class CallSiteAnalyzer implements Opcodes {
     }
 
 
-    public static void analyze(){
+    public static void analyze() {
         JCoroutineContext context = JCoroutineContext.getContext();
-        for (String declaredJCR : context.declaredJCRs()){
-            for (InvocationEdge invocation : context.invocations()){
-                String caller = invocation.getCaller();
-                if (declaredJCR.equals(caller)){
-                    context.registeredMethod(caller).setDeclaredJCR(true);
-                }
+        for (String declaredJCR : context.declaredJCRs()) {
+            CallSiteHolder.registeredMethod(declaredJCR).setDeclaredJCR(true);
+        }
 
-                String callee = invocation.getCallee();
-                if (declaredJCR.equals(callee)){
-                    context.registeredMethod(callee).setDeclaredJCR(true);
-                }
+        Map<String, TreeNode> methodRefMapping = new HashMap<String, TreeNode>();
+        for (Invocation invocation : CallSiteHolder.invocations()) {
+            String calleeRef = invocation.getCalleeRef();
+            TreeNode calleeNode = methodRefMapping.get(calleeRef);
+            if (calleeNode == null) {
+                calleeNode = new TreeNode(calleeRef);
+                methodRefMapping.put(calleeRef, calleeNode);
+            }
+            calleeNode.setRoot(false);
+
+            String callerRef = invocation.getCallerRef();
+            TreeNode callerNode = methodRefMapping.get(callerRef);
+            if (callerNode == null) {
+                callerNode = new TreeNode(callerRef);
+                methodRefMapping.put(callerRef, callerNode);
+            }
+            callerNode.appendChild(calleeNode);
+        }
+
+        for (TreeNode node : methodRefMapping.values()){
+            if (node.isRoot()){
+                CallSiteHolder.registerNode(node);
             }
         }
 
-        Set<InvocationEdge> invocations = context.invocations();
+        Map<String, TreeNode> t = CallSiteHolder.callSites();
+        System.out.println(1);
     }
 
 
@@ -92,16 +110,16 @@ public class CallSiteAnalyzer implements Opcodes {
                     if (!"<init>".equals(insNode.name) && !"<clinit>".equals(insNode.name)
                             && JCoroutineTools.refersJCoroutinePackage(insNode.owner)) {
 
-                        MethodNode caller = MethodNode.build(classNode.name, methodNode.name, methodNode.desc);
-                        MethodNode callee = MethodNode.build(insNode.owner, insNode.name, insNode.desc);
+                        MethodEntity callerEntity = MethodEntity.build(classNode.name, methodNode.name, methodNode.desc);
+                        MethodEntity calleeEntity = MethodEntity.build(insNode.owner, insNode.name, insNode.desc);
 
-                        context.registerMethod(caller);
-                        context.registerMethod(callee);
+                        CallSiteHolder.registerMethod(callerEntity);
+                        CallSiteHolder.registerMethod(calleeEntity);
 
-                        InvocationEdge edge = new InvocationEdge(JCoroutineTools.genMethodIdentifier(caller),
-                                JCoroutineTools.genMethodIdentifier(callee), instructions.indexOf(instruction));
+                        Invocation edge = new Invocation(JCoroutineTools.genMethodRef(callerEntity),
+                                JCoroutineTools.genMethodRef(calleeEntity), instructions.indexOf(instruction));
 
-                        context.registerInvocation(edge);
+                        CallSiteHolder.registerInvocation(edge);
                     }
                 }
             }

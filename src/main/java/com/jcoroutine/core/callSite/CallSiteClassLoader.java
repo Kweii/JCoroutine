@@ -15,9 +15,11 @@ import java.security.CodeSource;
 import java.util.jar.Manifest;
 
 /**
- * @author: guiliehua
- * @description:
- * @date:2018-09-17
+ * Created with IntelliJ IDEA.
+ * User: guiliehua
+ * Date: 2018/11/11
+ * Time: 下午3:37
+ * Desc:
  */
 class CallSiteClassLoader extends URLClassLoader {
     private static CallSiteClassLoader singleton = null;

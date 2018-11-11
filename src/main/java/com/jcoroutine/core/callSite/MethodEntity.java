@@ -1,15 +1,15 @@
 package com.jcoroutine.core.callSite;
 
 import com.google.common.base.Objects;
-import org.objectweb.asm.tree.ClassNode;
-import org.objectweb.asm.tree.MethodInsnNode;
 
 /**
- * @author: guiliehua
- * @description:
- * @date:2018-09-16
+ * Created with IntelliJ IDEA.
+ * User: guiliehua
+ * Date: 2018/11/11
+ * Time: 下午3:37
+ * Desc:
  */
-public class MethodNode {
+public class MethodEntity {
     //方法在哪个类中声明
     private String owner;
     //方法名
@@ -22,7 +22,7 @@ public class MethodNode {
     private boolean toTransform;
 
 
-    private MethodNode(String owner, String name, String desc) {
+    private MethodEntity(String owner, String name, String desc) {
         this.owner = owner;
         this.name = name;
         this.desc = desc;
@@ -30,8 +30,8 @@ public class MethodNode {
         this.toTransform = false;
     }
 
-    public static MethodNode build(String owner, String name, String desc) {
-        return new MethodNode(owner, name, desc);
+    public static MethodEntity build(String owner, String name, String desc) {
+        return new MethodEntity(owner, name, desc);
     }
 
     public String getOwner() {
@@ -63,7 +63,7 @@ public class MethodNode {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        MethodNode that = (MethodNode) o;
+        MethodEntity that = (MethodEntity) o;
         return
                 Objects.equal(owner, that.owner) &&
                 Objects.equal(name, that.name) &&
@@ -77,7 +77,7 @@ public class MethodNode {
 
     @Override
     public String toString() {
-        return "MethodNode{" +
+        return "MethodEntity{" +
                 ", owner='" + owner + '\'' +
                 ", name='" + name + '\'' +
                 ", desc='" + desc + '\'' +

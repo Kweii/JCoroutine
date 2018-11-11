@@ -1,14 +1,16 @@
 package com.jcoroutine.common.constant;
 
 /**
- * @author: guiliehua
- * @description:
- * @date:2018-09-15
+ * Created with IntelliJ IDEA.
+ * User: guiliehua
+ * Date: 2018/11/11
+ * Time: 下午3:37
+ * Desc:
  */
 public class JCRConstant {
     public static final String[] jcoroutineBasePackages = new String[]{
             "com.jcoroutine.test"
     };
 
-    public static final String BASE_SEPARATOR = "%$$$$%";
+    public static final String BASE_SEPARATOR = "_$JCR$_";
 }

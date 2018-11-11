@@ -1,6 +1,6 @@
 package com.jcoroutine.common.tool;
 
-import com.jcoroutine.core.callSite.MethodNode;
+import com.jcoroutine.core.callSite.MethodEntity;
 import org.objectweb.asm.Type;
 
 import java.lang.reflect.Method;
@@ -8,20 +8,22 @@ import java.lang.reflect.Method;
 import static com.jcoroutine.common.constant.JCRConstant.*;
 
 /**
- * @author: guiliehua
- * @description:
- * @date:2018-09-16
+ * Created with IntelliJ IDEA.
+ * User: guiliehua
+ * Date: 2018/11/11
+ * Time: 下午3:37
+ * Desc:
  */
 public class JCoroutineTools {
-    public static String genMethodIdentifier(Method method) {
-        return JCoroutineTools.genMethodIdentifier(method.getDeclaringClass().getName(), method.getName(), Type.getMethodDescriptor(method));
+    public static String genMethodRef(Method method) {
+        return JCoroutineTools.genMethodRef(method.getDeclaringClass().getName(), method.getName(), Type.getMethodDescriptor(method));
     }
 
-    public static String genMethodIdentifier(MethodNode mn){
-        return genMethodIdentifier(mn.getOwner(), mn.getName(), mn.getDesc());
+    public static String genMethodRef(MethodEntity mn){
+        return genMethodRef(mn.getOwner(), mn.getName(), mn.getDesc());
     }
 
-    public static String genMethodIdentifier(String className, String methodName, String methodDesc) {
+    public static String genMethodRef(String className, String methodName, String methodDesc) {
         className = className.replace("/", ".");
         return className + BASE_SEPARATOR + methodName + BASE_SEPARATOR + methodDesc;
     }
