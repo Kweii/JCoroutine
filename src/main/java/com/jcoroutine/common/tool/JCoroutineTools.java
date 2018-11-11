@@ -1,5 +1,6 @@
 package com.jcoroutine.common.tool;
 
+import com.jcoroutine.core.callSite.MethodNode;
 import org.objectweb.asm.Type;
 
 import java.lang.reflect.Method;
@@ -16,10 +17,15 @@ public class JCoroutineTools {
         return JCoroutineTools.genMethodIdentifier(method.getDeclaringClass().getName(), method.getName(), Type.getMethodDescriptor(method));
     }
 
+    public static String genMethodIdentifier(MethodNode mn){
+        return genMethodIdentifier(mn.getOwner(), mn.getName(), mn.getDesc());
+    }
+
     public static String genMethodIdentifier(String className, String methodName, String methodDesc) {
         className = className.replace("/", ".");
         return className + BASE_SEPARATOR + methodName + BASE_SEPARATOR + methodDesc;
     }
+
 
     public static boolean refersJCoroutinePackage(String className) {
         for (String basePackage : jcoroutineBasePackages) {

@@ -1,13 +1,14 @@
 package com.jcoroutine.core;
 
 import com.jcoroutine.common.tool.JCoroutineTools;
-import com.jcoroutine.core.callSite.CallSiteNode;
+import com.jcoroutine.core.callSite.InvocationEdge;
+import com.jcoroutine.core.callSite.MethodNode;
+import org.objectweb.asm.tree.ClassNode;
 
-import java.lang.reflect.Method;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
-
-import static com.jcoroutine.common.constant.JCRConstant.BASE_SEPARATOR;
 
 /**
  * @author: guiliehua
@@ -17,51 +18,47 @@ import static com.jcoroutine.common.constant.JCRConstant.BASE_SEPARATOR;
 public class JCoroutineContext {
     private static final JCoroutineContext _this = new JCoroutineContext();
 
-    private final Set<String> jcoroutineMethods;
+    private final Set<String> declaredJCRMethods;
 
-    private final Set<CallSiteNode> callSites;
+    private final Set<InvocationEdge> methodInvocations;
 
-    private JCoroutineContext(){
-        jcoroutineMethods = new TreeSet<String>();
+    private final Map<String, MethodNode> methodNodes;
 
-        callSites = new TreeSet<CallSiteNode>();
+    private JCoroutineContext() {
+        declaredJCRMethods = new TreeSet<String>();
+        methodInvocations = new TreeSet<InvocationEdge>();
+        methodNodes = new HashMap<String, MethodNode>();
     }
 
-    public static JCoroutineContext getContext(){
+    public static JCoroutineContext getContext() {
         return _this;
     }
 
-    public void registerJCoroutineMethod(String identifier){
-        _this.jcoroutineMethods.add(identifier);
+    public void registerDeclaredJCR(ClassNode cn, org.objectweb.asm.tree.MethodNode mn) {
+        String identifier = JCoroutineTools.genMethodIdentifier(cn.name, mn.name, mn.desc);
+        _this.declaredJCRMethods.add(identifier);
     }
 
-    public Set<String> registeredJCRMethods(){
-        return _this.jcoroutineMethods;
+    public Set<String> declaredJCRs() {
+        return _this.declaredJCRMethods;
     }
 
-
-    public boolean isJCoroutineMethod(Method method) throws Exception {
-        String identifier = JCoroutineTools.genMethodIdentifier(method);
-        return _this.jcoroutineMethods.contains(identifier);
+    public void registerMethod(MethodNode mn){
+        String identifier = JCoroutineTools.genMethodIdentifier(mn);
+        _this.methodNodes.put(identifier, mn);
     }
 
-    public void registerCallSite(CallSiteNode callSiteNode){
-        String caller = callSiteNode.caller;
-        String callee = callSiteNode.callee;
-        if (caller!=null && callee!=null){
-            if (caller.contains(BASE_SEPARATOR) && callee.contains(BASE_SEPARATOR)){
-                String calleeClsName = callee.split(BASE_SEPARATOR)[0];
-                String callerClsName = caller.split(BASE_SEPARATOR)[0];
-                if (JCoroutineTools.refersJCoroutinePackage(calleeClsName)&& JCoroutineTools.refersJCoroutinePackage(callerClsName)){
-                    _this.callSites.add(callSiteNode);
-                }
-            }
-        }
+    public MethodNode registeredMethod(String identifier){
+        return _this.methodNodes.get(identifier);
+    }
+
+    public void registerInvocation(InvocationEdge edge) {
+        _this.methodInvocations.add(edge);
     }
 
 
-    public Set<CallSiteNode> registeredCallSites(){
-        return _this.callSites;
+    public Set<InvocationEdge> invocations() {
+        return _this.methodInvocations;
     }
 
 }

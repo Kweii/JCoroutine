@@ -10,6 +10,9 @@ public class ClassLoaderTest {
     public static void main(String[] args) {
         User user = new User("guiliehua", 28, Gender.MAN);
         System.out.println(user.getName());
+        user.setAge(23);
+        System.out.println(user.getAge());
+        user.setName("XXXXX");
     }
 
 }

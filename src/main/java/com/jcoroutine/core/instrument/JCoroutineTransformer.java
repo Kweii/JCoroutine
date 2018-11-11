@@ -24,6 +24,7 @@ public final class JCoroutineTransformer implements ClassFileTransformer {
 
     static {
         CallSiteAnalyzer.preAnalyze();
+        CallSiteAnalyzer.analyze();
     }
 
     public static void premain(String options, Instrumentation ins) throws UnmodifiableClassException {

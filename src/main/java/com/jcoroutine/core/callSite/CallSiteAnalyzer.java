@@ -44,28 +44,39 @@ public class CallSiteAnalyzer implements Opcodes {
     }
 
 
-    void analyze(){
-        Set<CallSiteNode> callSiteNodes = JCoroutineContext.getContext().registeredCallSites();
-        Map<String, CallSiteNode> callSiteMap = new HashMap<String, CallSiteNode>();
-        for (CallSiteNode callSiteNode : callSiteNodes){
+    public static void analyze(){
+        JCoroutineContext context = JCoroutineContext.getContext();
+        for (String declaredJCR : context.declaredJCRs()){
+            for (InvocationEdge invocation : context.invocations()){
+                String caller = invocation.getCaller();
+                if (declaredJCR.equals(caller)){
+                    context.registeredMethod(caller).setDeclaredJCR(true);
+                }
 
+                String callee = invocation.getCallee();
+                if (declaredJCR.equals(callee)){
+                    context.registeredMethod(callee).setDeclaredJCR(true);
+                }
+            }
         }
+
+        Set<InvocationEdge> invocations = context.invocations();
     }
 
 
     static void analyzeClassMethods(byte[] bytes) {
+        JCoroutineContext context = JCoroutineContext.getContext();
         ClassReader classReader = new ClassReader(bytes);
         ClassNode classNode = new ClassNode();
         classReader.accept(classNode, F_FULL);
-        List<MethodNode> methodNodes = classNode.methods;
-        for (MethodNode methodNode : methodNodes) {
+        List<org.objectweb.asm.tree.MethodNode> methodNodes = classNode.methods;
+        for (org.objectweb.asm.tree.MethodNode methodNode : methodNodes) {
             //分析类中的每一个方法，如果是被@JCoroutine修饰的方法，需要注册到上下文中
             if (methodNode.visibleAnnotations != null) {
                 List<AnnotationNode> annotations = methodNode.visibleAnnotations;
                 for (AnnotationNode annotation : annotations) {
                     if (Type.getDescriptor(JCoroutine.class).equals(annotation.desc)) {
-                        String identifier = JCoroutineTools.genMethodIdentifier(classNode.name, methodNode.name, methodNode.desc);
-                        JCoroutineContext.getContext().registerJCoroutineMethod(identifier);
+                        context.registerDeclaredJCR(classNode, methodNode);
                     }
                 }
             }
@@ -76,16 +87,21 @@ public class CallSiteAnalyzer implements Opcodes {
                 AbstractInsnNode instruction = iterator.next();
                 int opCode = instruction.getOpcode();
                 if (INVOKEVIRTUAL <= opCode && opCode <= INVOKEINTERFACE) {
-                    MethodInsnNode min = (MethodInsnNode) instruction;
+                    MethodInsnNode insNode = (MethodInsnNode) instruction;
                     //将涉及到指定jar包的每一个方法调用注册到上下文中
-                    if (!"<init>".equals(min.name) && !"<clinit>".equals(min.name)
-                            && JCoroutineTools.refersJCoroutinePackage(min.owner)) {
+                    if (!"<init>".equals(insNode.name) && !"<clinit>".equals(insNode.name)
+                            && JCoroutineTools.refersJCoroutinePackage(insNode.owner)) {
 
-                        String caller = JCoroutineTools.genMethodIdentifier(classNode.name, methodNode.name, methodNode.desc);
-                        String callee = JCoroutineTools.genMethodIdentifier(min.owner, min.name, min.desc);
+                        MethodNode caller = MethodNode.build(classNode.name, methodNode.name, methodNode.desc);
+                        MethodNode callee = MethodNode.build(insNode.owner, insNode.name, insNode.desc);
 
-                        CallSiteNode callSiteNode = CallSiteNode.build(caller, callee);
-                        JCoroutineContext.getContext().registerCallSite(callSiteNode);
+                        context.registerMethod(caller);
+                        context.registerMethod(callee);
+
+                        InvocationEdge edge = new InvocationEdge(JCoroutineTools.genMethodIdentifier(caller),
+                                JCoroutineTools.genMethodIdentifier(callee), instructions.indexOf(instruction));
+
+                        context.registerInvocation(edge);
                     }
                 }
             }
